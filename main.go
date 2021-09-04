@@ -26,4 +26,5 @@ func main() {
 	fmt.Printf("Version %s of my %s thing is %d cm tall.\n", defaultColorThing.GetVersion(), defaultColorThing.GetColor(), defaultColorThing.GetSize())
 	fmt.Printf("I like to call it '%s'.\n", defaultColorThing.GetLabel())
 	fmt.Printf("You can call it '%s'\n", defaultColorThing.GetDescription())
+
 }

@@ -40,35 +40,35 @@ func (c *Config) GetVersion() string {
 }
 
 // SetColor sets the color of the thing
-func SetColor(color string) func(*Config) {
+func SetColor(color string) Option {
 	return func(c *Config) {
 		c.color = color
 	}
 }
 
 // SetDescription set the description of the thing
-func SetDescription(description string) func(*Config) {
+func SetDescription(description string) Option {
 	return func(c *Config) {
 		c.description = description
 	}
 }
 
 // SetLabel sets the label of the thing
-func SetLabel(label string) func(*Config) {
+func SetLabel(label string) Option {
 	return func(c *Config) {
 		c.label = label
 	}
 }
 
 // SetSize sets the size of the thing
-func SetSize(size int) func(*Config) {
+func SetSize(size int) Option {
 	return func(c *Config) {
 		c.size = size
 	}
 }
 
 // SetVersion sets the version of the thing
-func SetVersion(version string) func(*Config) {
+func SetVersion(version string) Option {
 	return func(c *Config) {
 		c.version = version
 	}
